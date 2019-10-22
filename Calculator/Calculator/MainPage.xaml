@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             x:Class="Calculator.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label x:Name="lblResult" Text="Result" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        
+        <Entry Placeholder=""
+               x:Name="txt1"
+               Keyboard="Numeric"
+               
+               VerticalOptions="CenterAndExpand"/>
+        
+        <Editor x:Name="ed1"
+                Keyboard="Numeric"
+              
+                VerticalOptions="CenterAndExpand"/>
+        
+        <Button x:Name="btn1" Text="suma" Clicked="btn1_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+        
+        <Button x:Name="btn2" Text="Resta" Clicked="btn2_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+        
+        <Button x:Name="btn3" Text="Multi" Clicked="btn3_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+        
+        <Button x:Name="btn4" Text="Div" Clicked="btn4_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+
+    </StackLayout>
+
+</ContentPage>

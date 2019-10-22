@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SubnetCalculator"
+             x:Class="SubnetCalculator.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+
+        <Label x:Name="Title1" Text="SubnetCalculator" 
+           HorizontalOptions="Center"
+           Font="Bold"  FontSize="20" 
+           VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="Title2" Text="IP Address" 
+           HorizontalTextAlignment="Start"
+           Font="Bold" FontSize="15"
+           Margin="150,0,0,0"
+           VerticalOptions="CenterAndExpand" />
+
+        <StackLayout Grid.Row="1" HorizontalOptions="Center"  Orientation="Horizontal" Spacing="0">
+            <Editor x:Name="txtA" WidthRequest="60"
+                    Keyboard="Numeric"
+                    TextChanged="txtA_TextChanged"
+            Text="0"
+            VerticalOptions="StartAndExpand" 
+            Style="{DynamicResource LargeLabel}"/>
+
+            <Label Text="."
+            Font="Bold"
+            Margin="0,17,0,0"
+            Style="{DynamicResource LargeLabel}"/>
+
+            <Editor x:Name="txtB"  WidthRequest="60"
+                    Keyboard="Numeric"
+                    TextChanged="txtB_TextChanged"
+            Text="0"
+            Margin="0,0,0,0"
+                    
+            Style="{DynamicResource LargeLabel}"/>
+
+            <Label Text="."
+            Font="Bold"
+            Margin="0,17,0,0"
+            Style="{DynamicResource LargeLabel}"/>
+
+            <Editor x:Name="txtC" WidthRequest="60"
+                    Keyboard="Numeric"
+                    TextChanged="txtC_TextChanged"
+            Text="0"
+            Margin="0,0,0,0"
+            Style="{DynamicResource LargeLabel}"/>
+
+            <Label Text="."
+            Font="Bold"
+            Margin="0,17,0,0"
+            Style="{DynamicResource LargeLabel}"/>
+
+            <Editor x:Name="txtD" WidthRequest="60"
+                    Keyboard="Numeric"
+                    TextChanged="txtD_TextChanged"
+            Text="0"
+            Margin="0,0,0,0"
+            Style="{DynamicResource LargeLabel}"/>
+
+            <Label x:Name="lblPrefijo" Text="/1"
+            FontSize="20"
+            Margin="15,10,0,0"
+            Style="{DynamicResource LargeLabel}"/>
+        </StackLayout>
+
+        <Label x:Name="Title3" Text="Subnet Mask" 
+          HorizontalTextAlignment="Start"
+               Font="Bold" FontSize="15"
+               Margin="150,0,0,0"
+           VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="lblMask" Text="128.0.0.0" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="Title4" Text="Network Address" 
+           HorizontalTextAlignment="Start"
+               Font="Bold" FontSize="15"
+               Margin="150,0,0,0"
+           VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="lblNetAdd" Text="0.0.0.0" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="Title5" Text="Maximum Hosts" 
+           HorizontalTextAlignment="Start"
+               Font="Bold" FontSize="15"
+               Margin="150,0,0,0"
+           VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="lblHosts" Text="2147483646" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="Title6" Text="WildCard" 
+           HorizontalTextAlignment="Start"
+               Font="Bold" FontSize="15"
+               Margin="150,0,0,0"
+           VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="lblWildCard" Text="127.255.255.255" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" Orientation="Horizontal" Spacing="0">
+
+            <Button x:Name="btnAtras" Text="Atras" Clicked="btnAtras_Clicked"/>
+            <Button x:Name="btnAdelante" Text="Adelante" Clicked="btnAdelante_Clicked"/>
+
+        </StackLayout>
+
+
+
+    </StackLayout>
+
+</ContentPage>
