@@ -9,7 +9,7 @@ desplazamiento. No necesita conexión a internet.
 
 ## Previsualización
 
-![Screenshot_2019-10-21-23-24-39](https://user-images.githubusercontent.com/49250842/70856509-294a9180-1e93-11ea-8c3f-811187fcbe0f.png)
+![subnetXamarin](https://user-images.githubusercontent.com/49250842/70856540-96f6bd80-1e93-11ea-9c6e-824ae8de3cd4.png)
 
 
 ## Estatus del proyecto
